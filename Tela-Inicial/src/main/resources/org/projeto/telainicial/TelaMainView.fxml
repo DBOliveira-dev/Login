@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projeto.telainicial.TelaMainApp">
+    <VBox spacing="10" prefWidth="800" prefHeight="600">
+
+        <!-- Barra de Navegação -->
+        <HBox spacing="10" styleClass="nav-bar">
+            <Button text="Sign in" styleClass="nav-button"/>
+            <Button text="Registrar" styleClass="nav-button"/>
+        </HBox>
+
+        <!-- Imagem Principal -->
+        <ImageView fitWidth="800" fitHeight="250">
+            <image>
+                <Image url=""/>
+            </image>
+        </ImageView>
+
+        <!-- Seção "Sobre Nós" -->
+        <VBox spacing="10" styleClass="section">
+            <Label text="SOBRE NÓS" styleClass="section-title"/>
+
+            <HBox spacing="10">
+                <VBox>
+                    <ImageView fitWidth="200" fitHeight="100">
+                        <image>
+                            <Image url=""/>
+                        </image>
+                    </ImageView>
+                    <Label text="conheça nosso negócio" styleClass="section-subtitle"/>
+                </VBox>
+
+                <Label text="A Fockink é uma empresa de agricultura..." styleClass="section-text"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="A Fockink foi fundada..." styleClass="section-text"/>
+                <VBox>
+                    <ImageView fitWidth="200" fitHeight="100">
+                        <image>
+                            <Image url="@"/>
+                        </image>
+                    </ImageView>
+                    <Label text="nossa história" styleClass="section-subtitle"/>
+                </VBox>
+            </HBox>
+        </VBox>
+
+        <!-- Seção de Contato -->
+        <VBox spacing="10" styleClass="contact-section">
+            <Label text="Entre em Contato" styleClass="section-title"/>
+            <Button text="Contatar" styleClass="contact-button"/>
+        </VBox>
+
+    </VBox>
+</AnchorPane>
